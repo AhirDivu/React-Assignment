@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    
+
+<form action="#" method="post" id="cart">
+
+    <table summary="Your cart">
+        
+        <tr>
+        
+            <th scope="col">Product-Info</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price(per unite)</th>
+          <th scope="col">Price(subtotal)</th>
+        
+        </tr>
+        
+        <tr>
+            <td>Fortunata Window Hardware</td>
+           <td><input type="text" id="price"/> </td> 
+        <td><input type="text" id="quantity" onblur="getPrice()" /></td> <td><span id="res"></span></td>
+        <td><button>remove</button></td>
+
+        </tr>
+        <tr>
+            <td>Woven Trellis Window Hardware</td>
+           <td><input type="text" id="price2"/> </td> 
+        <td><input type="text" id="quantity2" onblur="getPrice2()" /></td> <td><span id="res2"></span></td>
+        <td><button>remove</button></td>
+
+        </tr>
+
+      </table>
+    </form>
+    
+</body>
+</html>
+
+<script>
+
+    function getPrice()
+    {
+        var p = document.getElementById('price').value;
+         var q = document.getElementById('quantity').value;
+
+        total_price = parseInt(p)* parseInt(q);
+
+         document.getElementById('res').innerHTML = total_price;
+    }
+
+
+    function getPrice2()
+    {
+        var p = document.getElementById('price2').value;
+         var q = document.getElementById('quantity2').value;
+
+        total_price = parseInt(p)* parseInt(q);
+
+       document.getElementById('res2').innerHTML = total_price;
+    }
+
+</script>
+

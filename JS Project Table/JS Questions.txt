@@ -1,0 +1,13 @@
+What is javascript output method :
+
+JavaScript can "display" data in different ways: Writing into an HTML element, using innerHTML . Writing into the HTML output using document.write() . Writing into an alert box, using window.alert() . Writing into the browser console, using console.log() .
+
+
+• How to use javascript output method?
+
+Writing into an HTML element, using innerHTML . Writing into the HTML output using document.write() . Writing into an alert box, using window.alert() . Writing into the browser console, using console.log() .
+
+
+• How to use javascript event to do all the examples?
+
+ When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc
